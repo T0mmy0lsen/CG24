@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#b4ffffff">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp">
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/bg_list"
+                    android:layout_gravity="center"
+                    android:contentDescription=""
+                    android:paddingTop="70dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="left|bottom"
+                    android:background="#78000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/playerName"
+                    android:layout_gravity="left|bottom"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

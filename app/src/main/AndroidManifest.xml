@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tommy.cg24">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -18,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Add"></activity>
+        <activity
+            android:name=".Player"
+            android:label="@string/title_activity_player"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
