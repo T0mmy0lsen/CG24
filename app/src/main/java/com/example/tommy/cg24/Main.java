@@ -18,6 +18,6 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setText("Hello World");
+        textView.setText("Hi there");
     }
 }
