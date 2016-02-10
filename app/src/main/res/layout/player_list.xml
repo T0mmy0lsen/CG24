@@ -2,43 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="150dp"
-    android:weightSum="1"
-    android:id="@+id/list_layout"
-    android:elevation="4dp">
+    android:id="@+id/list_layout">
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_margin="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#d2ffffff"
+        android:elevation="10dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/bg_list"
-            android:layout_gravity="center" />
-
-        <ImageView
+        <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:id="@+id/bar_list"
-            android:layout_gravity="left|bottom"
-            android:background="#78000000" />
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/playerName"
-            android:layout_gravity="left|bottom"
-            android:textColor="#ffffff"
-            android:textColorHighlight="#ffffff"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_list"
+                android:layout_gravity="center" />
 
-    </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/playerName"
+                android:layout_gravity="left|bottom"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>
