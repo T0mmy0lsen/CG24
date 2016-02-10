@@ -1,11 +1,11 @@
 package com.example.tommy.cg24.Models;
 
-public class ModelListPlayer {
+public class ModelPlayer {
 
-    private String _summonname, _region;
-    private int _mostplayed, _id;
+    private String _summonname,_mostplayed, _region;
+    private int  _id;
 
-    public ModelListPlayer(String summonname, String region, int mostplayed, int id) {
+    public ModelPlayer(int id, String summonname, String region, String mostplayed) {
         _summonname = summonname;
         _region = region;
         _mostplayed = mostplayed;
@@ -19,7 +19,7 @@ public class ModelListPlayer {
         return _region;
     }
 
-    public int getMostplayed() {
+    public String getMostplayed() {
         return _mostplayed;
     }
 

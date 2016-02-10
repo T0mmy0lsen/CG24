@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:text="ACCEPT"
                 android:id="@+id/add_button"
-                android:onClick="add_player"
+                android:onClick="addPlayer"
                 android:shadowDx="1"
                 android:shadowDy="1"
                 android:shadowRadius="2"
